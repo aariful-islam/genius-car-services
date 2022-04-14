@@ -16,9 +16,12 @@ const LogIn = () => {
     const handleFormSubmit =e=>{
         e.preventDefault();
     }
+    const naviagetRegistration=()=>{
+        navigate('/registration')
+    }
   return (
     <div>
-      <h1 className="text-primary text-center">Please Log in</h1>
+      <h1 className="text-primary text-center m-4">Please Log in</h1>
       <Form onSubmit={handleFormSubmit} className="w-50 mx-auto">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -32,11 +35,14 @@ const LogIn = () => {
           <Form.Label>Password</Form.Label>
           <Form.Control onBlur={handlePassword} type="password" placeholder="Password" />
         </Form.Group>
+        <p>New to genius car? <span className="text-danger" style={{cursor:'pointer'}} onClick={naviagetRegistration}>Please register</span></p>
 
         <Button variant="primary" type="submit">
           Submit
         </Button>
+       
       </Form>
+      
     </div>
   );
 };
