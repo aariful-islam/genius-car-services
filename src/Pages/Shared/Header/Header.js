@@ -14,15 +14,13 @@ const Header = () => {
             <Nav className="me-auto">
             
               <Nav.Link className="text-lg"  href="home#services">Servicecs</Nav.Link>
-              <Nav.Link className="text-lg" href="home#experts">Experts</Nav.Link>
+              <Nav.Link className="text-lg" href="#experts">Experts</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
               
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">Registration</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-               Log In
-              </Nav.Link>
+              <Nav.Link as={Link} to="/login">Log In</Nav.Link>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>
