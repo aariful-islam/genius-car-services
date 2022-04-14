@@ -10,9 +10,7 @@ const LogIn = () => {
     const navigate =useNavigate();
     const [
         signInWithEmailAndPassword,
-        user,
-        loading,
-        error,
+        
       ] = useSignInWithEmailAndPassword(auth);
     const handleEmail =e=>{
         setEmail(e.target.value)
